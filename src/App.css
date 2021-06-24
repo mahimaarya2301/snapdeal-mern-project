@@ -1,38 +1,275 @@
-.App {
+.tbdr{
+  border:1px dashed #000;
+  height: 100% !important;
+}
+a:focus {
+  box-shadow: none !important;
+}
+body{
+  font-family: 'RobotoRegular', sans-serif;
+  font-size: 0.8em;
+}
+header{
+  height: 94px;
+  background-color: #e40046;
+  border: 1px dashed red;
+}
+.aside{
+  z-index: 1000;
+  top:50px;
+}
+.asidenav > li:hover > a{
+  background: #fafafa;
+  color:#333;
+  border-left: 3px solid #e40046;
+  border-top:1px solid #e5e5e5;
+  border-bottom:1px solid #e5e5e5;
+}
+.asidenav > li:hover > div{
+  display: block;
+}
+.asidenav_righbox{
+  width: 900px;
+  height: 550px;
+  background:red;
+  z-index: 1000;
+  left:190px;
+  display: none;
+}
+.asidenav a{
+  color:#333;
+  border-left: 3px solid #fff;
+  border-top:1px solid #fff;
+  border-bottom:1px solid #fff;
+}
+.asidenav a:hover{
+  background: #fafafa;
+  color:#333;
+  border-left: 3px solid #e40046;
+  border-top:1px solid #e5e5e5;
+  border-bottom:1px solid #e5e5e5;
+}
+.a_hform{
+  height: 37px;
+  width: 95%;
+  border-radius: 1px;
+  background: #f8f8f8;
+}
+.inputBox{
+  width: 555px;
+  z-index: 1000;
+  box-shadow: 0px 0px 3px rgba(0,0,0,0.5);
+  display: none;
+}
+.cartModel .modal-body li a{
+  
+  color:#333;
+  text-decoration: none;
+}
+.cartModel .modal-body li{
+  display: block;
+  padding: 10px;/*Remember the TRBL formular*/
+  width: 260px;
+  float: left;
+}
+.inputBox h6{
+  color:#999;
+}
+.inputBox ul a{
+  padding-left:24px;
+  color:#666 !important;
+}
+.inputBox ul a:hover{ 
+    background: #f6f6f6 !important;
+}
+.a_hform input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #8f8f8f;
+}
+.a_hform input{
+  border:none !important;
+  background: #f8f8f8 !important;
+  color:#8f8f8f !important;
+}
+.a_hform input:focus{
+  box-shadow: none !important;
+  border:none !important;
+}
+.a_hform input:focus + .inputBox{
+  display: block;
+}
+.a_hbot_nav a{
+  display: block ;
+  padding:20px 40px 20px 40px;
+}
+.a_hbot_nav > li:first-child{
+  border-color: rgba(0,0,0,0.1) !important;
+}
+.a_hbot_nav > li{
+  position: relative;
+}
+.a_hbot_nav > li:nth-child(2):hover > a{
+  background: #333;
+  transition: none !important;
+}
+.fauserbox{
+  position: absolute;
+  bottom:10px;
+  right:0px;
   text-align: center;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 45px;
+  background: rgba(0,0,0,0.1);
+  border-radius: 40px;
+}
+.a_hbot_nav > li:hover ul{
+  display: block;
+}
+.a_hbot_nav > li ul{
+  position: absolute;
+  top:62px;
+  right:0px;
+  width: 215px;
+  height: 275px;
+  background: #333;
+  z-index: 1000;
+  border-top-left-radius:4px ;
+  display: none;
+}
+.a_bl{
+  margin-top:11px;
+  text-decoration: none;
+}
+.a_bl:hover{
+  background: #333;
+}
+.a_header_top{
+  height: 30px;
+  background: #c7003d;
+}
+.a_header_top > .container{
+  border:1px dashed #000;
+  height: 100%;
+  max-width: 1245px !important;
+}
+.asidenav2 a{
+  /*TRBL*/
+  padding: 5px 10px 5px 10px !important;
+}
+.a_header_bottom{
+  height: 65px;
+  z-index: 2000;
+  background: #e40046;
+}
+.a_header_bottom > .container{
+  border:1px dashed #000;
+  height: 100%;
+  max-width: 1245px !important;
+}
+.a_main{
+  background-color: #f7f7f7;
+  border:1px dashed green;
+}
+.a_main1{
+  border:1px dashed #000;
+  height: 6673px;
+  max-width: 1245px !important;
+}
+.a_main1_b1{
+  height: 816px;
+  border:1px dashed red;
+}
+.a_main1_b1 > div{
+  border:1px dashed #000;
+}
+.a_slider{
+  height: 345px;
+  border:1px dashed orange;
+}
+.a_trending_products{
+  height: 450px;
+  border:1px dashed red;
+}
+.carousel-indicators > button{
+  width: 160px !important;
+  height: 23px !important;
+  text-indent: 0px !important;
+}
+.carousel-indicators > button.active{
+  padding-bottom: 10px !important;
+  border-bottom: 2px solid #333333;
+}
+.carousel-item{
+  height: 299px !important;
+}
+.a_main2{
+  border:1px dashed red;
+  height: 455px;
+}
+footer a{
+  color: #777 !important;
+}
+footer{
+  background-color: #f7f7f7;
+  color: #777 !important;
+}
+.a_fspritebox{
+  width: 53px;
+  height: 53px;
+  border:1px dashed orange;
+  background-image: url('https://i1.sdlcdn.com/img/newHomePageIcons@1x.png');
+  background-position: -5px -63px;
+}
+.a_foot1{
+  height: 550px;
+}
+.a_foot2 a:hover{
+  text-decoration: underline;
+}
+.a_foot2 a{
+  color:#333;
+  text-decoration: none;
+}
+.a_foot2{
+  border:1px dashed green;
+  height: 997px;
+  max-width: 1245px !important;
+}
+.a_foot3{
+  border:1px dashed orange;
+  height: 46px;
+  max-width: 1245px !important;
+}
+.swiperbox{
+  background-color: red;
+  transform-origin: 50% 200%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Heart Animation */
+.a_heart{
+  animation-name: heartbeat;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@keyframes heartbeat{
+  0%{
+    transform:scale(1)
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  5%{
+      transform:scale(1.2)
   }
-  to {
-    transform: rotate(360deg);
+  10%{
+      transform:scale(1.1)
   }
+  15%{
+      transform:scale(1.25)
+  }
+  50%{
+      transform:scale(1)
+  }
+  100%{
+      transform:scale(1)
+  }
+
 }
